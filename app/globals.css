@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media (prefers-color-scheme: dark) {
+  body {
+    --color-bkg: #000000;
+    --color-primary: #ffffff;
+    --color-secondary: #222222;
+  }
+}
+
+[data-theme="dark"] {
+  --color-bkg: #000000;
+  --color-primary: #ffffff;
+  --color-secondary: #222222;
+}
+
+[data-theme="light"] {
+  --color-bkg: #ffffff;
+  --color-primary: #000000;
+  --color-secondary: #999999;
+}
+
+* {
+  color: var(--color-primary);
+}
